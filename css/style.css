@@ -218,3 +218,20 @@ body {
   top: 40px !important;
 }
 /*# sourceMappingURL=style.css.map */
+@media(max-width: 900px) {
+    .container__item {
+        width: 300px;
+        height: 200px;
+        margin: 50px 100px 20px 80px;
+    }
+
+    .container__item-header h1 {
+        font-size: 30px !important;
+        left: -50%;
+    }
+
+    .container__item h2 {
+        font-size: 40px;
+        bottom: -20px;
+    }
+}
