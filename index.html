@@ -1,384 +1,62 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Сайт двери</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 </head>
 <body>
-	<div class="wrap">
-		<div class="overlay" id="overlaysss">
-				<div class="popup">
-				<div class="popup_bg"></div>
-					<div class="form">
-						<form action="php/form.php" method="post">
-							<input type="text" name="name" placeholder="Ваше имя">
-							<input type="mail" name="email" placeholder="Ваша почта">
-							<input type="text" name="phone" placeholder="Ваш номер телефона">
-							<input type="submit" value="Отправить">
-						</form>
-					</div>
-				</div>
-				<div class="header-wrap">
-				<header>
-					<a href="/site1/index.html"><img src="img/2-layers.png" alt="logo"></a>
-					<div class="contacts-start-p1">
-						<p><span class="text-red">Адрес:</span>  г. Ставрополь, пр. Кулакова, 6</p>
-						<p><span class="text-red">Телефоны:</span> <p>межкомнатные двери <a href="tel:+7852566127">+7 8652 56-61-27</a>, <a href="tel:+78652956868">+7 8652 95-68-68</a></p><p>металлические двери <a href="tel:+78652566049">+7 8652 56-60-49</a></p>
-					</div>
-					<div class="contacts-start-p2">
-						<p><span class="text-red">E-mail:</span>  <a href="/site2/index.html">stav_slkom@rambler.ru</a></p>
-						<p><span class="text-red">Сайт:</span>  <a href="#">mir-dverei.ru</a></p>
-						<p><span class="text-red">Открыто: </span>ежедневно, 9:00–18:00</p>
-					</div>
-				</header>
-				<nav>
-					<ul class="menu-overl">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#about-company">о нас</a></li>
-						<li><a href="#gallery">галерея</a></li>
-						<li><a href="#interior-door">межкомнатные двери</a></li>
-						<li><a href="#metal-door">металлические двери</a></li>
-						<li><a href="#fittings">фурнитура</a></li>
-						<li><a href="#our-advantages">преимущества</a></li>
-						<li><a href="#contacts">контакты</a></li>
-						<button class="button-answ" onclick="showPopup();">обратный звонок</button>
-					</ul>
-				</nav>
-			</div>
-			<div class="small-menu">
-					<div class="toggle1">
-						<a href="#" class="toggle-menu-img"><img src="img/2-layers.png" alt="logo"></a>
-						<span class="toggle">Меню</span>
-					</div>
-					<ul class="menu-overll">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#about-company">о нас</a></li>
-						<li><a href="#gallery">галерея</a></li>
-						<li><a href="#interior-door">межкомнатные двери</a></li>
-						<li><a href="#metal-door">металлические двери</a></li>
-						<li><a href="#fittings">фурнитура</a></li>
-						<li><a href="#our-advantages">преимущества</a></li>
-						<li><a href="#contacts">контакты</a></li>
-						<button class="button-answ" onclick="showPopup();">обратный звонок</button>
-					</ul>
-			</div>	
-			<div class="preview-slider">
-				<div><img src="img/Layer_58.png" alt="" >
-					<div class="kak-eto-delat">
-						<h1>новое поступление</h1>
-						<h4>стильных входных дверей</h4>
-						<h3>уже в продаже!</h3>
-						<button id="new-models-doors" class="button active">Узнать подробнее</button>
-					</div>
-				</div>
-	    		<div><img src="img/second-door.jpg" alt="">
-	    			<div class="kak-eto-delat">
-						<h1>новое поступление</h1>
-						<h4>стильных входных дверей</h4>
-						<h3>уже в продаже!</h3>
-						<button id="new-models-doors" class="button active">Узнать подробнее</button>
-					</div>
-				</div>
-	    		<div><img src="img/Layer_58.png" alt="">
-					<div class="kak-eto-delat">
-						<h1>новое поступление</h1>
-						<h4>стильных входных дверей</h4>
-						<h3>уже в продаже!</h3>
-						<button id="new-models-doors" class="button active">Узнать подробнее</button>
-					</div>
-	    		</div>
-			</div>
-		</div>
-		<div class="about-company" id="about-company">
-			<div class="comp-overlay" >
-				<div class="comp-headline">
-					<h2>О Компании</h2>
-					<p>Динамично развиваясь с 1998 года, компания “Мир дверей” занимает прочное место на дверном рынке, став крупнейшим в Ставропольском крае оператором входных и межкомнатных дверей.</p>
-					<h2 class="text-bor">Наши преимущества:</h2>
-					<ul class="prem">
-						<li>складской комплекс 2000 кв.м.</li>
-						<li>собственный автопарк для тарнспортировки грузов</li>
-						<li>вся продукция соответствует требованиям Госстандарта России в строительстве</li>
-						<li>профессиональные менеджеры в области продаж и логистики</li>
-						<li>выгодные условия сотрудничества</li>
-						<li>продукция от ведущих производителей</li>
-						<li>установка+гарантия</li>
-						<li>бесплатная доставка по г.Ставрополю и г.Михайловску</li>
-					</ul>
-				</div>
-			</div>
-			<div class="store-overlay">
-				<div class="store">
-					<h2>магазин</h2>
-					<p>Мы предлагаем широкий ассортимент продукции при оптимальном сочетании цены и качества.</p>
-					<p>Приобретая продукцию у нас, Вы получаете<br> гарантированное качество продукции и услуг по установке дверей.</p>
-					<img src="img/Layer_19.png" alt="" class="minimized">
-				</div>
-			</div>
-		</div>
-		<div class="gallery" id="gallery">
-			<div class="gallery-overlay">
-				<div class="gallery-main">
-					<div class="gallery-headline">
-						<h2>галерея</h2>
-						<p>Продажа, установка и сервисное обслуживание входных и межкомнатных дверей в Ставрополе. В магазине-салоне «Мир Дверей» вы можете купить межкомнатные и входные двери и комплектующие к ним.</p>
-					</div>
-				</div>
-				<div class="slider-center">
-					<img src="img/slider2-1.png" class="minimized" alt="">
-					<img src="img/slider2-2.png" class="minimized" alt="">
-					<img src="img/slider2-3.png" class="minimized" alt="">
-					<img src="img/slider2-1.png" class="minimized" alt="">
-					<img src="img/slider2-2.png" class="minimized" alt="">
-				</div>
-				<button id="view-all" class="button-view-all">Смотреть все фото</button>
-			</div>
-		</div>
-		<div class="interior-door" id="interior-door">
-			<div class="interior-headline">
-				<h2>межкомнатные двери</h2>
-				<p>В ассортименте нашего магазина более 200 моделей межкомнатных дверей самых различных стилей и расцветок, среди которых вы точно сможете подобрать именно ту модель, которая идеально подойдет под ваш интерьер.</p>
-			</div>
-			<div class="change-interior-door">
-				<p onclick="showSlider1();">массив</p>
-				<p onclick="showSlider2();">шпон</p>
-				<p onclick="showSlider3();">эко-шпон</p>
-			</div>
-			<div class="slider-interior1" id="slider-interiors1">
-				<img src="img/slider-interior-1-1.png" alt="">
-				<img src="img/slider-interior-1-1.png" alt="">
-				<img src="img/slider-interior-1-1.png" alt="">
-				<img src="img/slider-interior-1-1.png" alt="">
-			</div>
-			<div class="slider-interior2" id="slider-interiors2">
-				<img src="img/slider-interior-1-2.jpg" alt="">
-				<img src="img/slider-interior-1-2.jpg" alt="">
-				<img src="img/slider-interior-1-2.jpg" alt="">
-				<img src="img/slider-interior-1-2.jpg" alt="">
-			</div>
-			<div class="slider-interior3" id="slider-interiors3">
-				<img src="img/slider-interior-1-3.jpg" alt="">
-				<img src="img/slider-interior-1-3.jpg" alt="">
-				<img src="img/slider-interior-1-3.jpg" alt="">
-				<img src="img/slider-interior-1-3.jpg" alt="">
-			</div>
-		</div>
-		<div class="pop-model">
-			<div class="pop-model-overlay">
-				<div class="pop-headline">
-					<h2>популярные модели</h2>
-					<p>Подобрать нужную дверь бывает не легко, поэтому мы предлагаем вам рассмотреть популярные модели и их варианты в интерьере</p>
-				</div>
-				<div class="popular-doors-choice">
-					<img src="img/door1-1.png" alt="">
-					<img src="img/door1-2.png" alt="">
-					<img src="img/door1-3.png" alt="">
-					<img src="img/door1-4.png" alt="">
-					<img src="img/door1-5.png" alt="">
-					<img src="img/door1-6.png" alt="">
-					<img src="img/door1-1.png" alt="">
-					<img src="img/door1-2.png" alt="">
-					<img src="img/door1-3.png" alt="">
-					<img src="img/door1-4.png" alt="">
-					<img src="img/door1-5.png" alt="">
-					<img src="img/door1-6.png" alt="">
-				</div>
-			</div>
-		</div>
-		<div class="metal-door" id="metal-door">
-			<div class="metal-headline">
-				<h2>металлические двери</h2>
-				<p>В нашем ассортименте представлено более 100 моделей металличеких дверей в наличии и под заказ</p>
-			</div>
-			<div class="buttons-metal" id="buttons-metal">
-				<button id="new-models-doors" class="button1" onclick="showMetal();">новые модели</button>
-				<button id="popular-models-doors" class="button1" onclick="showPopular();">популярные модели</button>
-			</div>
-			<div class="slick-visibility">
-				<div class="slick-metal-doors-slider" id="slick-metal-doors-slider">
-					<img src="img/door-metal2-1.png" alt="">
-					<img src="img/door-metal2-2.png" alt="">
-					<img src="img/door-metal2-3.png" alt="">
-					<img src="img/door-metal2-4.png" alt="">
-					<img src="img/door-metal2-5.png" alt="">
-					<img src="img/door-metal2-6.png" alt="">
-					<img src="img/door-metal2-1.png" alt="">
-					<img src="img/door-metal2-2.png" alt="">
-					<img src="img/door-metal2-3.png" alt="">
-					<img src="img/door-metal2-4.png" alt="">
-					<img src="img/door-metal2-5.png" alt="">
-					<img src="img/door-metal2-6.png" alt="">
-				</div>
-				<div class="popular-doors-choicess" id="popular-doors-choicess">
-					<img src="img/door1-1.png" alt="">
-					<img src="img/door1-2.png" alt="">
-					<img src="img/door1-3.png" alt="">
-					<img src="img/door1-4.png" alt="">
-					<img src="img/door1-5.png" alt="">
-					<img src="img/door1-6.png" alt="">
-					<img src="img/door1-1.png" alt="">
-					<img src="img/door1-2.png" alt="">
-					<img src="img/door1-3.png" alt="">
-					<img src="img/door1-4.png" alt="">
-					<img src="img/door1-5.png" alt="">
-					<img src="img/door1-6.png" alt="">
-				</div>
-			</div>
-			<div class="metal-overlay-end">
-				<div class="find-door">
-					<p>Ежедневно открывая входную дверь, вы должны испытывать удовольствие. А закрывая ее, быть уверенными в том, что ваш дом, семья и имущество находятся под надежной защитой. Поэтому при выборе металлической двери не может быть компромиссов.</p>
-					<h3>Найдите свою входную дверь – и она будет радовать вас не один десяток лет!</h3>
-				</div>
-				<div class="metal-doors-certificate">
-					<img src="img/cer1.png" alt="" class="minimized">
-					<img src="img/cer2.png" alt="" class="minimized">
-					<img src="img/cer3.png" alt="" class="minimized">
-				</div>
-			</div>
-		</div>
-		<div class="fittings" id="fittings">
-			<div class="fittings-overlay">
-				<div class="fittings-main">
-					<div class="fitting-headline">
-						<h2>фурнитура</h2>
-						<p>В нашем отделе дверной фурнитуры представлено более 200 моделей дверных ручек и соответствующей фурнитуры под них в наличии</p>
-					</div>
-					<div class="slider-fittings">
-						<img src="img/slider-fittings-1.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-2.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-3.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-4.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-5.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-6.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-1.png" class="minimized" alt="клик для увеличения">
-						<img src="img/slider-fittings-2.png" class="minimized" alt="клик для увеличения">
-					</div>
-					<h4>Выбрать фурнитуру? Легко!</h4>
-					<p>Наши консультанты помогут вам подобрать из всего обилия дверной фурнитуры именно тот комплект, который будет соответствовать вашим нуждам</p>
-				</div>
-				<div class="partners">
-					<img src="img/partner-1.png" alt="">
-					<img src="img/partner-2.png" alt="">
-					<img src="img/partner-3.png" alt="">
-					<img src="img/partner-4.png" alt="">
-					<img src="img/partner-5.png" alt="">
-					<img src="img/partner-6.png" alt="">
-					<img src="img/partner-7.png" alt="">
-					<img src="img/partner-8.png" alt="">
-					<img src="img/partner-9.png" alt="">
-					<img src="img/partner-10.png" alt="">
-					<img src="img/partner-11.png" alt="">
-					<img src="img/partner-12.png" alt="">		
-				</div>
-			</div>
-		</div>
-		<div class="our-advantages" id="our-advantages">
-			<div class="our-advantages-headline">
-				<h2>НАШИ ПРЕИМУЩЕСТВА</h2>
-			</div>
-			<div class="advantges-choice-overlay">
-				<div class="advantges-choice" onmouseover="change1();" onmouseout="change0();">
-					<img src="img/advan1.png" alt="">
-					<p>НА РЫНКЕ С 1998 ГОДА</p>	
-				</div>
-				<div class="advantges-choice" onmouseover="change2();" onmouseout="change0();">
-					<img src="img/advan2.png" alt="">
-					<p>ПРЯМЫЕ ПОСТАВКИ С ЗАВОДОВ</p>
-				</div>
-				<div class="advantges-choice" onmouseover="change3();" onmouseout="change0();">
-					<img src="img/advan3.png" alt="">
-					<p>ТОВАРЫ ОТ ЛУЧШИХ ПРОИЗВОДИТЕЛЕЙ</p>
-				</div>
-				<div class="advantges-choice" onmouseover="change4();" onmouseout="change0();">
-					<img src="img/advan4.png" alt="">
-					<p>ГАРАНТИЯ ЛУЧШЕЙ ЦЕНЫ</p>
-				</div>
-			</div>
-			<div class="advantges-choice-show-text">
-				<p id="advantges-text">НА ДАННЫЙ МОМЕНТ НАШЕЙ КОМПАНИИ 20 ЛЕТ. ЗА ЭТО ВРЕМЯ НАША КОМПАНИЯ СМОГЛА ПРОЧНО ЗАКРЕПИТЬСЯ НА РЫНКЕ И ЗАНЯТЬ ЛИДИРУЮЩИЕ ПОЗИЦИИ ПО ПРОДАЖАМ ДВЕРЕЙ</p>
-			</div>
-		</div>
-		<div class="measurements" id="measurements">
-			<div class="measurements-overlay">
-				<div class="measurements-headline">
-					<h2>ЗАМЕРЫ В ГОРОДЕ</h2>
-					<p>Магазин «МИР ДВЕРЕЙ» рекомендует доверять проведение замеров только специалистам. Технолог определит точные размеры, необходимость доработки проема, возможность использования различных крепежей в стены и т.д. На основании этих данных он определит возможность установки предварительно выбранной двери, либо определит другие подходящие к установке модели.</p>
-					<div class="measurements-text">
-					<h5>МЫ ПРЕДЛАГАЕМ <b>БЕСПЛАТНЫЕ ЗАМЕРЫ</b></br> от специалистов по г.Ставрополю и г.Михайловску</h5>
-					<h3>ЗАПИШИСЬ УЖЕ СЕГОДНЯ!</h3>
-					<h6>Межкомнатные двери   <a href="tel:+78652956868">+7 8652 95-68-68</a></h6>
-					<h6>Металлические двери   <a href="tel:+78652566049">+7 8652 56-60-49</a></h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contacts" id="contacts">
-			<div class="cotacts-and-map-overlay">
-				<div class="contacts-and-texts-overlay">
-					<div class="contacts-headline">
-						<h2>контакты</h2>
-					</div>
-					<div class="contacts-texts">
-						<div class="contacts-text-row">
-							<img src="img/contacts-icon1.png" alt="">
-							<p>г. Ставрополь, просп. Кулакова, 6</p>
-						</div>
-						<div class="contacts-text-row">
-							<img src="img/contacts-icon2.png" alt="">
-							<p><a href="tel:+78652956868">+7 8652 95-68-68</a>,<a href="tel:+78652566049"> +7 8652 56-60-49</a></p>
-						</div>
-						<div class="contacts-text-row">
-							<img src="img/contacts-icon3.png" alt="">
-							<p>ОТКРЫТО:<br> ежедневно, 9:00–18:00</p>
-						</div>
-					</div>
-				</div>
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9481.720160259038!2d41.90666238370821!3d45.04659629442967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f9a9fda5c86ab7%3A0xaf16d36da4dbd61f!2z0L_RgC3RgiDQmtGD0LvQsNC60L7QstCwLCA2LCDQodGC0LDQstGA0L7Qv9C-0LvRjCwg0KHRgtCw0LLRgNC-0L_QvtC70YzRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGPLCAzNTUwMjg!5e0!3m2!1sru!2sua!4v1539615907955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-			</div>
-			<div class="showText" id="showText">
-			<div class="showTextBG">
-				<p>
-					Политика конфиденциальности</p><p>Данная политика конфиденциальности относится к сайту под доменным именем rumedia-group.ru. Эта страница содержит сведения о том, какую информацию мы (администрация сайта) или третьи лица могут получать, когда вы пользуетесь нашим сайтом.</p><p>Данные, собираемые при посещении сайта</p><p>Персональные данные</p><p>Персональные данные при посещении сайта передаются пользователем добровольно, к ним могут относиться: имя, фамилия, отчество, номера телефонов, адреса электронной почты, адреса для доставки товаров или оказания услуг, реквизиты компании, которую представляет пользователь, должность в компании, которую представляет пользователь, аккаунты в социальных сетях; поля форм могут запрашивать и иные данные.</p><p>Эти данные собираются в целях оказания услуг или продажи товаров, связи с пользователем или иной активности пользователя на сайте, а также, чтобы отправлять пользователям информацию, которую они согласились получать.</p><p>Мы не проверяем достоверность оставляемых данных, однако не гарантируем качественного исполнения заказов или обратной связи с нами при некорректных данных.</p><p>Данные собираются имеющимися на сайте формами для заполнения (например, регистрации, оформления заказа, подписки, оставления отзыва, обратной связи и иными).</p><p>Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на сайты сторонних организаций (скрипты сервисов сторонних организаций).</p><p>Также данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так и скриптами сервисов сторонних организаций. Эти данные собираются автоматически, отправку этих данных можно запретить, отключив cookies (куки) в браузере, в котором открывается сайт.</p><p>Не персональные данные</p><p>Кроме персональных данных при посещении сайта собираются не персональные данные, их сбор происходит автоматически веб-сервером, на котором расположен сайт, средствами CMS (системы управления сайтом), скриптами сторонних организаций, установленными на сайте. К данным, собираемым автоматически, относятся: IP адрес и страна его регистрации, имя домена, с которого вы к нам пришли, переходы посетителей с одной страницы сайта на другую, информация, которую ваш браузер предоставляет добровольно при посещении сайта, cookies (куки), фиксируются посещения, иные данные, собираемые счетчиками аналитики сторонних организаций, установленными на сайте.</p><p>Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания клиентов, улучшения удобства использования сайта, анализа посещаемости.
-				</p>	
-				</div>
-			</div>
-		</div>
-		<footer id="footer">
-			<div class="menu-end">
-				<ul class="menu-overl">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#about-company">о нас</a></li>
-					<li><a href="#gallery">галерея</a></li>
-					<li><a href="#interior-door">межкомнатные двери</a></li>
-					<li><a href="#metal-door">металлические двери</a></li>
-					<li><a href="#fittings">фурнитура</a></li>
-					<li><a href="#our-advantages">преимущества</a></li>
-					<li><a href="#contacts">контакты</a></li>
-				</ul>
-			</div>
-			<div class="footer-end">
-				<a href="#"><img src="img/2-layers.png" alt="logo" id="bottm-logo"></a>
-				<p onclick="showText();">Политика конфиденциальности</p>
-				<a href="#" id="karta-site">Карта сайта</a>
-				<img src="img/rumedia-logo.png" alt="">
-			</div>
-		</footer>
-		
-	
-	</div>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">r ;s </a>
+            </div>
+            <div class="menu__link">
+                <a href="aboutme.html">Curriculum Vitae (CV)</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container__item-header">
+            <h1>PORTFOLIO</h1>
+            <a href="https://t.me/unleashedmyself" target="_blank"><img src="images/tg.ico" alt="telegram"></a>
+            <a href="https://github.com/UnleashedMySelf" target="_blank"><img src="images/Github.svg" alt="github"></a>
+        </div>
+        <div class="container__item container__item-1">
+            <a href="/site1/index.html" class="container__item-title">Project 1</a>
+        </div>
+        <div class="container__item container__item-2">
+            <a href="/site1/index.html" class="container__item-title">Project 1</a>
+        </div>
+        <div class="container__item container__item-3">
+            <a href="/site1/index.html" class="container__item-title">Project 1</a>
+        </div>
+        <div class="container__item container__item-4">
+            <a href="/site1/index.html" class="container__item-title">Project 1</a>
+        </div>
+        <div class="container__item container__item-5">
+            <a href="/site1/index.html" class="container__item-title">Project 1</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Copyright <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
 
-
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-
-	
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/horizontal-scroll.js"></script>
+    <script>
+        const blocks = document.getElementsByClassName("container__item")
+        const container = document.getElementsByClassName("container")
+        const hs = new HorizontalScroll.default({
+        blocks: blocks,
+        container: container,
+        isAnimated: true,
+        springEffect: 0.8
+        })
+    </script>
 </body>
 </html>
