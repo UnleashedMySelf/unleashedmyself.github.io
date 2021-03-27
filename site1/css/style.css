@@ -1,0 +1,2245 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Muriad-Pro;
+  src: url("../fonts/MyriadPro-Regular.woff");
+  font-size: 14px;
+  font-weight: 400; }
+@font-face {
+  font-family: Muriad-Pro;
+  src: url("../fonts/MyriadPro-Light.woff");
+  font-size: 54px;
+  font-weight: 300; }
+/* line 14, ../sass/style.sass */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Muriad-Pro, sans-serif; }
+
+/* line 22, ../sass/style.sass */
+h6 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+/* line 28, ../sass/style.sass */
+h5 {
+  font-size: 28px;
+  color: #000;
+  font-weight: 400; }
+
+/* line 33, ../sass/style.sass */
+h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 200; }
+
+/* line 39, ../sass/style.sass */
+h3 {
+  font-size: 36px;
+  color: #b6211e;
+  font-weight: 400; }
+
+/* line 44, ../sass/style.sass */
+h2 {
+  text-transform: uppercase;
+  color: #3a4248;
+  font-size: 40px;
+  font-weight: 200; }
+
+/* line 50, ../sass/style.sass */
+ul {
+  list-style: none; }
+
+/* line 53, ../sass/style.sass */
+p {
+  color: #666666; }
+
+/* line 57, ../sass/style.sass */
+.text-red {
+  color: #fe4844; }
+
+/* line 60, ../sass/style.sass */
+.text-bor {
+  color: #b6211e; }
+
+/* line 63, ../sass/style.sass */
+a {
+  text-decoration: none;
+  color: #fff; }
+  /* line 66, ../sass/style.sass */
+  a:hover {
+    color: #fe4844; }
+
+/* увеличение картинок START */
+/* line 71, ../sass/style.sass */
+.minimized {
+  cursor: pointer; }
+
+/* line 74, ../sass/style.sass */
+#magnify {
+  display: none;
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999; }
+
+/* line 81, ../sass/style.sass */
+#magnify img {
+  width: 458px; }
+
+/* line 84, ../sass/style.sass */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 9990; }
+
+/* увеличение картинок END */
+/* line 97, ../sass/style.sass */
+.wrap {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 105, ../sass/style.sass */
+.header-wrap {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+  opacity: 0.9;
+  margin-bottom: -130px;
+  background: #4e4646;
+  position: relative;
+  z-index: 50; }
+  /* line 120, ../sass/style.sass */
+  .header-wrap p {
+    color: #fff; }
+
+/* line 123, ../sass/style.sass */
+header {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 1170px;
+  height: 60px;
+  line-height: 1; }
+
+/* line 134, ../sass/style.sass */
+.contacts-start {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px; }
+
+/* line 142, ../sass/style.sass */
+nav {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background: #4e4646;
+  top: 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top: 1px solid #746f70;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%; }
+  /* line 158, ../sass/style.sass */
+  nav a {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase; }
+    /* line 165, ../sass/style.sass */
+    nav a:hover {
+      color: #fe4844; }
+
+/* line 168, ../sass/style.sass */
+.menu-overl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px; }
+
+/* line 175, ../sass/style.sass */
+.overlay {
+  background: #4e4646;
+  color: #fff;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1; }
+
+/* line 186, ../sass/style.sass */
+.preview-slider {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  width: 100%; }
+  /* line 195, ../sass/style.sass */
+  .preview-slider img {
+    width: 100%;
+    height: 663px; }
+
+/* line 199, ../sass/style.sass */
+.button-answ {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border: none;
+  padding: 7px 25px;
+  background: grey;
+  font-size: 14px;
+  border-radius: 5px; }
+  /* line 211, ../sass/style.sass */
+  .button-answ:hover {
+    background: #fe4844; }
+
+/*------------------------- About-company ---------------------------- Z */
+/* line 217, ../sass/style.sass */
+.about-company {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 1170px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  /* line 229, ../sass/style.sass */
+  .about-company p {
+    padding-top: 20px;
+    font-size: 18px; }
+
+/* line 233, ../sass/style.sass */
+.comp-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  /* line 240, ../sass/style.sass */
+  .comp-overlay::before {
+    content: "";
+    display: inline-block;
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px; }
+
+/* line 249, ../sass/style.sass */
+.comp-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 630px;
+      flex-basis: 630px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 53px; }
+  /* line 258, ../sass/style.sass */
+  .comp-headline p {
+    padding-bottom: 40px; }
+  /* line 260, ../sass/style.sass */
+  .comp-headline ul {
+    list-style: none;
+    padding-top: 10px; }
+  /* line 263, ../sass/style.sass */
+  .comp-headline li {
+    color: #666666;
+    padding-bottom: 10px; }
+    /* line 266, ../sass/style.sass */
+    .comp-headline li::before {
+      display: inline-block;
+      content: "";
+      background-color: #b6211e;
+      height: 2px;
+      width: 5px;
+      vertical-align: middle;
+      margin-right: 10px; }
+
+/* line 275, ../sass/style.sass */
+.store-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  /* line 283, ../sass/style.sass */
+  .store-overlay::before {
+    content: "";
+    display: inline-block;
+    background-color: #b3b3b3;
+    width: 1px;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 10px; }
+
+/* line 292, ../sass/style.sass */
+.store {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 540px;
+      flex-basis: 540px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 300, ../sass/style.sass */
+  .store img {
+    margin-top: 20px;
+    width: 100%; }
+
+/*------------------------- gallery ---------------------------- A */
+/* line 306, ../sass/style.sass */
+.gallery {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #271c1a;
+  width: 100%; }
+
+/* line 318, ../sass/style.sass */
+.gallery-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/Layer_20.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 60px;
+  height: 654px; }
+
+/* line 331, ../sass/style.sass */
+.gallery-main {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1170px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+/* line 341, ../sass/style.sass */
+.gallery-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle; }
+  /* line 352, ../sass/style.sass */
+  .gallery-headline h2, .gallery-headline p {
+    color: #fff;
+    padding-left: 20px; }
+  /* line 355, ../sass/style.sass */
+  .gallery-headline p {
+    padding-top: 20px;
+    font-size: 18px; }
+
+/* line 359, ../sass/style.sass */
+.slider-center {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 1170px;
+  padding-top: 60px; }
+  /* line 369, ../sass/style.sass */
+  .slider-center img {
+    width: 391px;
+    height: 100%;
+    padding: 20px; }
+
+/* line 374, ../sass/style.sass */
+.button-view-all {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  border: none;
+  width: 289px;
+  height: 58px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+  padding: 7px 25px;
+  background: #fe4844;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 3px;
+  align-items: center;
+  cursor: pointer;}
+  /* line 392, ../sass/style.sass */
+  .button-view-all:hover {
+    background: #4e4646; }
+
+/*------------------------- interior-door ---------------------------- E */
+/* line 397, ../sass/style.sass */
+.interior-door {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1170px;
+  width: 100%;
+  height: 700px;
+  padding-top: 60px;
+  padding-bottom: 30px; }
+
+/* line 412, ../sass/style.sass */
+.interior-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 422, ../sass/style.sass */
+  .interior-headline h2, .interior-headline p {
+    padding-left: 20px; }
+
+/* line 425, ../sass/style.sass */
+.change-interior-door {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 30px;
+  min-height: 117px; }
+  /* line 435, ../sass/style.sass */
+  .change-interior-door p {
+    line-height: 58.5px;
+    color: #b6211e;
+    font-size: 24px;
+    min-width: 33%;
+    font-weight: 300;
+    padding-left: 20px;
+    text-transform: uppercase;
+    border-left: 1px solid #b3b3b3;
+    max-height: 70px;
+    vertical-align: middle;
+    cursor: pointer; }
+
+/* line 448, ../sass/style.sass */
+#slider-interiors1, #slider-interiors2, #slider-interiors3 {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  max-width: 1170px;
+  width: 90%;
+  padding-top: 40px; }
+  /* line 465, ../sass/style.sass */
+  #slider-interiors1 img, #slider-interiors2 img, #slider-interiors3 img {
+    height: 400px; }
+
+/* line 468, ../sass/style.sass */
+#slider-interiors2, #slider-interiors3 {
+  visibility: hidden; }
+
+/*------------------------- pop-model ---------------------------- B */
+/* line 473, ../sass/style.sass */
+.pop-model {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #f4f5f7; }
+
+/* line 485, ../sass/style.sass */
+.pop-model-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1170px;
+  width: 100%; }
+
+/* line 496, ../sass/style.sass */
+.pop-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 506, ../sass/style.sass */
+  .pop-headline h2, .pop-headline p {
+    padding-left: 20px;
+    height: 50px; }
+
+/* line 510, ../sass/style.sass */
+.popular-doors-choice {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  width: 100%; }
+  /* line 519, ../sass/style.sass */
+  .popular-doors-choice img {
+    height: 350px;
+    width: 183px;
+    padding: 11px 20px 14px 20px;
+    background: #fff;
+    border: 1px solid #b6b6b6;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s; }
+    /* line 526, ../sass/style.sass */
+    .popular-doors-choice img:hover {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s; }
+
+/*------------------------- metal-door ---------------------------- A */
+/* line 532, ../sass/style.sass */
+.metal-door {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/* line 546, ../sass/style.sass */
+.metal-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 556, ../sass/style.sass */
+  .metal-headline h2, .metal-headline p {
+    padding-left: 20px;
+    height: 50px; }
+
+/* line 560, ../sass/style.sass */
+.buttons-metal {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 24px; }
+
+/* line 570, ../sass/style.sass */
+.button, .button1 {
+  height: 57px;
+  width: 290px;
+  background: #ededed;
+  color: #3a4248;
+  border: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 1px;
+  text-transform: uppercase; }
+  /* line 582, ../sass/style.sass */
+  .button:hover, .button1:hover {
+    background: #b6211e;
+    color: white; }
+  /* line 585, ../sass/style.sass */
+  .button:focus, .button1:focus {
+    background: #b6211e;
+    color: white; }
+
+/* line 589, ../sass/style.sass */
+.button1:first-child {
+  margin-right: 13px; }
+
+/* line 592, ../sass/style.sass */
+.active {
+  background: #b6211e;
+  color: white; }
+  /* line 595, ../sass/style.sass */
+  .active:hover {
+    color: #000; }
+
+/* line 598, ../sass/style.sass */
+.slick-visibility {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 605, ../sass/style.sass */
+.slick-metal-doors-slider, .popular-doors-choicess {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px; }
+  /* line 613, ../sass/style.sass */
+  .slick-metal-doors-slider img, .popular-doors-choicess img {
+    height: 350px;
+    width: 183px;
+    padding: 11px 20px 14px 20px;
+    background: #fff;
+    border: 1px solid #b6b6b6; }
+    /* line 619, ../sass/style.sass */
+    .slick-metal-doors-slider img:hover, .popular-doors-choicess img:hover {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s; }
+
+/* line 624, ../sass/style.sass */
+#slick-metal-doors-slider, #popular-doors-choicess {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 220px;
+  height: 400px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%; }
+
+/* line 636, ../sass/style.sass */
+#slick-metal-doors-slider {
+  visibility: visible; }
+
+/* line 639, ../sass/style.sass */
+#popular-doors-choicess {
+  visibility: hidden; }
+
+/* line 642, ../sass/style.sass */
+.metal-overlay-end {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 400px; }
+
+/* line 652, ../sass/style.sass */
+.find-door {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 560px;
+      flex-basis: 560px;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle; }
+  /* line 663, ../sass/style.sass */
+  .find-door h3, .find-door p {
+    padding-left: 20px; }
+  /* line 665, ../sass/style.sass */
+  .find-door p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400; }
+
+/* line 671, ../sass/style.sass */
+.metal-doors-certificate {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  /* line 679, ../sass/style.sass */
+  .metal-doors-certificate img {
+    cursor: pointer;
+    position: relative;
+    width: 189px; }
+
+/*------------------------- fittings ---------------------------- L */
+/* line 687, ../sass/style.sass */
+.fittings {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 700px;
+  background: #000; }
+
+/* line 696, ../sass/style.sass */
+.fittings-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/fittings-bg.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 18px; }
+
+/* line 709, ../sass/style.sass */
+.fittings-main {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 719, ../sass/style.sass */
+  .fittings-main h4 {
+    text-align: center;
+    padding-top: 40px; }
+  /* line 722, ../sass/style.sass */
+  .fittings-main p {
+    margin: auto;
+    width: 90%;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center; }
+
+/* line 729, ../sass/style.sass */
+.fitting-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle; }
+  /* line 739, ../sass/style.sass */
+  .fitting-headline h2, .fitting-headline p {
+    width: 100%;
+    padding-top: 0;
+    text-align: left;
+    color: #fff;
+    padding-left: 20px;
+    height: 50px; }
+
+/* line 747, ../sass/style.sass */
+.slider-fittings {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  max-width: 595px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  /* line 756, ../sass/style.sass */
+  .slider-fittings img {
+    width: 180px;
+    padding: 6.5px; }
+  /* line 759, ../sass/style.sass */
+  .slider-fittings .slick-dots li button:before {
+    padding-top: 30px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 10px; }
+
+/* line 765, ../sass/style.sass */
+.partners {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eeeeee;
+  height: 102px;
+  margin-top: 30px;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  /* line 777, ../sass/style.sass */
+  .partners img {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 100px; }
+
+/*------------------------- our-advantages ---------------------------- O */
+/* line 788, ../sass/style.sass */
+.our-advantages {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  height: 509px;
+  max-width: 1170px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+
+/* line 803, ../sass/style.sass */
+.our-advantages-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #b3b3b3;
+  max-height: 101px;
+  vertical-align: middle; }
+  /* line 812, ../sass/style.sass */
+  .our-advantages-headline h2 {
+    padding: 0 0 0 20px;
+    color: #000;
+    height: 80px; }
+
+/* line 817, ../sass/style.sass */
+.advantges-choice-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 40px;
+  max-width: 900px;
+  width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  /* line 830, ../sass/style.sass */
+  .advantges-choice-overlay p {
+    padding-top: 42px; }
+
+/* line 833, ../sass/style.sass */
+.advantges-choice {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 180px; }
+  /* line 842, ../sass/style.sass */
+  .advantges-choice p {
+    text-align: center;
+    color: #b5211d;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: default; }
+
+/* line 849, ../sass/style.sass */
+.advantges-choice-show-text {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  max-width: 900px;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+/* line 859, ../sass/style.sass */
+#advantges-text {
+  max-width: 900px;
+  text-align: center; }
+
+/*------------------------- measurements ---------------------------- U */
+/* line 865, ../sass/style.sass */
+.measurements {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f4f4f6; }
+
+/* line 874, ../sass/style.sass */
+.measurements-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/measurements-bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 60px;
+  min-height: 500px;
+  width: 100%; }
+
+/* line 887, ../sass/style.sass */
+.measurements-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle; }
+  /* line 900, ../sass/style.sass */
+  .measurements-headline h2, .measurements-headline p {
+    padding-left: 20px; }
+  /* line 902, ../sass/style.sass */
+  .measurements-headline h2 {
+    color: #000; }
+  /* line 904, ../sass/style.sass */
+  .measurements-headline p {
+    color: #666666; }
+
+/* line 906, ../sass/style.sass */
+.measurements-text {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%; }
+  /* line 916, ../sass/style.sass */
+  .measurements-text h5 {
+    text-align: center;
+    padding-top: 60px; }
+  /* line 919, ../sass/style.sass */
+  .measurements-text h3 {
+    color: #b5211d;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px; }
+  /* line 924, ../sass/style.sass */
+  .measurements-text a {
+    color: #000;
+    font-size: 24px; }
+    /* line 927, ../sass/style.sass */
+    .measurements-text a:hover {
+      color: #b5211d; }
+  /* line 929, ../sass/style.sass */
+  .measurements-text h6 {
+    text-align: center; }
+
+/*------------------------- contacts ---------------------------- J */
+/* line 934, ../sass/style.sass */
+.contacts {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  height: 555px;
+  max-width: 1170px;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 949, ../sass/style.sass */
+.contacts-headline {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #b3b3b3;
+  max-height: 108px;
+  vertical-align: middle;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  /* line 961, ../sass/style.sass */
+  .contacts-headline h2 {
+    padding: 20px 0 0 20px;
+    margin-bottom: 100px;
+    height: 100px; }
+
+/* line 966, ../sass/style.sass */
+.contacts-texts {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 40px;
+  height: 200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+/* line 981, ../sass/style.sass */
+.contacts-text-row {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px; }
+  /* line 991, ../sass/style.sass */
+  .contacts-text-row p {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000; }
+  /* line 1002, ../sass/style.sass */
+  .contacts-text-row a {
+    text-decoration: none;
+    color: #000; }
+    /* line 1005, ../sass/style.sass */
+    .contacts-text-row a:hover {
+      color: #fe4844; }
+
+/* line 1007, ../sass/style.sass */
+.map {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 1014, ../sass/style.sass */
+.cotacts-and-map-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* line 1023, ../sass/style.sass */
+.contacts-and-texts-overlay {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/*------------------------- footer ---------------------------- E */
+/* line 1033, ../sass/style.sass */
+footer {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #4e4646; }
+
+/* line 1042, ../sass/style.sass */
+.menu-end {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #4e4646;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #746f70;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%; }
+  /* line 1057, ../sass/style.sass */
+  .menu-end a {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14px; }
+    /* line 1065, ../sass/style.sass */
+    .menu-end a:hover {
+      color: #000; }
+
+/* line 1068, ../sass/style.sass */
+.footer-end {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1170px;
+  width: 100%;
+  height: 150px; }
+  /* line 1080, ../sass/style.sass */
+  .footer-end a:hover {
+    color: #000; }
+  /* line 1082, ../sass/style.sass */
+  .footer-end p {
+    cursor: pointer;
+    color: #fff; }
+    /* line 1085, ../sass/style.sass */
+    .footer-end p:hover {
+      color: #000; }
+
+/* line 1089, ../sass/style.sass */
+.kak-eto-delat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 750px;
+  text-align: center;
+  max-height: 200px; }
+  /* line 1099, ../sass/style.sass */
+  .kak-eto-delat h1 {
+    font-size: 67px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  /* line 1103, ../sass/style.sass */
+  .kak-eto-delat h4 {
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  /* line 1107, ../sass/style.sass */
+  .kak-eto-delat h3 {
+    font-size: 46px;
+    margin-top: 40px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  /* line 1112, ../sass/style.sass */
+  .kak-eto-delat .button {
+    margin-top: 40px;
+    cursor: pointer; }
+    /* line 1115, ../sass/style.sass */
+    .kak-eto-delat .button:hover {
+      background: #4e4646;
+      color: #fff; }
+
+/* line 1119, ../sass/style.sass */
+.slick-slide {
+  position: relative; }
+
+/* line 1122, ../sass/style.sass */
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  display: none; }
+  /* line 1130, ../sass/style.sass */
+  .popup .popup_bg {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 5;
+    height: 100%;
+    width: 100%; }
+
+/* line 1136, ../sass/style.sass */
+.form {
+  position: relative;
+  z-index: 9000;
+  width: 200px;
+  margin-top: 200px !important;
+  margin: auto;
+  padding: 40px 20px;
+  background: #b6211e;
+  border-radius: 10px; }
+
+/* line 1145, ../sass/style.sass */
+input {
+  width: 96%;
+  padding: 5px 2%;
+  margin: 10px 0;
+  border-radius: 4px; }
+
+/* line 1151, ../sass/style.sass */
+.showText {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  display: none; }
+  /* line 1159, ../sass/style.sass */
+  .showText p {
+    color: #fff;
+    width: 1170px;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px; }
+  /* line 1165, ../sass/style.sass */
+  .showText .showTextBG {
+    padding-top: 40px;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 50000;
+    height: 100%;
+    width: 100%; }
+
+/* line 1173, ../sass/style.sass */
+.small-menu {
+  display: none;
+  /* ADAPTIVE */ }
+
+@media screen and (max-width: 1228px) {
+  /* line 1179, ../sass/style.sass */
+  .header-wrap {
+    display: none; }
+
+  /* line 1181, ../sass/style.sass */
+  .menu-overl {
+    width: 90%; }
+
+  /* line 1183, ../sass/style.sass */
+  .small-menu {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0; }
+
+  /* line 1194, ../sass/style.sass */
+  .toggle1 {
+    padding: 10px 0;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #4e4646;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 1204, ../sass/style.sass */
+    .toggle1 img {
+      width: 200px; }
+
+  /* line 1206, ../sass/style.sass */
+  .menu-overll {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #4e4646;
+    overflow: hidden;
+    padding: 15px 0;
+    coursor: point;
+    border-top: 1px solid grey; }
+    /* line 1220, ../sass/style.sass */
+    .menu-overll.active-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    /* line 1222, ../sass/style.sass */
+    .menu-overll li {
+      padding: 2px;
+      text-align: center; }
+
+  /* line 1226, ../sass/style.sass */
+  .partners img {
+    width: 5%; }
+
+  /* line 1228, ../sass/style.sass */
+  .about-company, .gallery-main, .slider-center, .pop-model-overlay, .fittings-main, .our-advantages, .measurements-headline, .contacts, .footer-end {
+    width: 90%; }
+
+  /* line 1231, ../sass/style.sass */
+  .find-door h3 {
+    font-size: 26px;
+    text-align: center; }
+
+  /* line 1234, ../sass/style.sass */
+  .slick-dots li button:before {
+    display: none; }
+
+  /* line 1236, ../sass/style.sass */
+  .gallery-overlay {
+    padding: 60px 0;
+    height: 100%; } }
+@media screen and (max-width: 1094px) {
+  /* line 1241, ../sass/style.sass */
+  .map {
+    width: 50%; }
+
+  /* line 1243, ../sass/style.sass */
+  .about-company {
+    width: 98%; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 1247, ../sass/style.sass */
+  #slider-interiors1, #slider-interiors2, #slider-interiors3 {
+    top: 235px; }
+
+  /* line 1249, ../sass/style.sass */
+  .about-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    /* line 1251, ../sass/style.sass */
+    .about-company .comp-overlay, .about-company .store-overlay {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      /* line 1254, ../sass/style.sass */
+      .about-company .comp-overlay .store, .about-company .comp-overlay .comp-headline, .about-company .store-overlay .store, .about-company .store-overlay .comp-headline {
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%; }
+
+  /* line 1256, ../sass/style.sass */
+  .map {
+    width: 100%; }
+
+  /* line 1258, ../sass/style.sass */
+  iframe {
+    width: 700px;
+    height: 400px;
+    margin: auto; }
+
+  /* line 1262, ../sass/style.sass */
+  .contacts {
+    height: 100%; }
+
+  /* line 1264, ../sass/style.sass */
+  .cotacts-and-map-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+
+  /* line 1266, ../sass/style.sass */
+  #karta-site {
+    display: none; }
+
+  /* line 1269, ../sass/style.sass */
+  .footer-end p {
+    text-align: center; }
+
+  /* line 1271, ../sass/style.sass */
+  .menu-overl {
+    width: 760px; }
+
+  /* line 1273, ../sass/style.sass */
+  .partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 1275, ../sass/style.sass */
+    .partners img {
+      width: 100px; }
+
+  /* line 1277, ../sass/style.sass */
+  .metal-overlay-end {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 1279, ../sass/style.sass */
+    .metal-overlay-end .find-door {
+      max-height: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+      /* line 1282, ../sass/style.sass */
+      .metal-overlay-end .find-door p {
+        padding-bottom: 45px; }
+      /* line 1284, ../sass/style.sass */
+      .metal-overlay-end .find-door h3 {
+        font-size: 28px;
+        text-align: center; }
+
+  /* line 1287, ../sass/style.sass */
+  .metal-doors-certificate {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 40px; } }
+@media screen and (min-width: 425px) and (max-width: 800px) {
+  /* line 1292, ../sass/style.sass */
+  .measurements-overlay {
+    min-height: 690px; } }
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  /* line 1296, ../sass/style.sass */
+  .footer-end p {
+    text-align: center;
+    font-size: 10px; }
+
+  /* line 1299, ../sass/style.sass */
+  .about-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    /* line 1301, ../sass/style.sass */
+    .about-company .comp-overlay, .about-company .store-overlay {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      /* line 1304, ../sass/style.sass */
+      .about-company .comp-overlay .store, .about-company .comp-overlay .comp-headline, .about-company .store-overlay .store, .about-company .store-overlay .comp-headline {
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%; }
+
+  /* line 1306, ../sass/style.sass */
+  #slider-interiors1, #slider-interiors2, #slider-interiors3 {
+    top: 235px; }
+
+  /* line 1308, ../sass/style.sass */
+  .about-company, .gallery-main, .slider-center, .interior-door, .pop-model-overlay, .metal-door, .fittings-main, .our-advantages, .measurements-headline, .contacts, .footer-end {
+    width: 96%; }
+
+  /* line 1310, ../sass/style.sass */
+  .map {
+    width: 100%; }
+
+  /* line 1312, ../sass/style.sass */
+  iframe {
+    width: 90%;
+    margin: auto; }
+
+  /* line 1315, ../sass/style.sass */
+  .cotacts-and-map-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+
+  /* line 1317, ../sass/style.sass */
+  .our-advantages {
+    height: 730px; }
+
+  /* line 1319, ../sass/style.sass */
+  .advantges-choice-overlay {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  /* line 1321, ../sass/style.sass */
+  .advantges-choice {
+    width: 50%;
+    margin: 30px 0; }
+
+  /* line 1324, ../sass/style.sass */
+  .advantges-choice-show-text {
+    padding-top: 50px; }
+
+  /* line 1326, ../sass/style.sass */
+  #karta-site {
+    display: none; }
+
+  /* line 1328, ../sass/style.sass */
+  .contacts {
+    height: 100%; }
+
+  /* line 1330, ../sass/style.sass */
+  .metal-overlay-end {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 1332, ../sass/style.sass */
+    .metal-overlay-end .find-door {
+      max-height: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+      /* line 1335, ../sass/style.sass */
+      .metal-overlay-end .find-door p {
+        padding-bottom: 45px; }
+      /* line 1337, ../sass/style.sass */
+      .metal-overlay-end .find-door h3 {
+        font-size: 28px; }
+
+  /* line 1339, ../sass/style.sass */
+  .metal-doors-certificate {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-top: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  /* line 1344, ../sass/style.sass */
+  .footer-end {
+    height: 100px; }
+    /* line 1346, ../sass/style.sass */
+    .footer-end a {
+      width: 180px; }
+    /* line 1348, ../sass/style.sass */
+    .footer-end #bottm-logo {
+      width: 180px; }
+
+  /* line 1350, ../sass/style.sass */
+  .menu-overl {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+  /* line 1353, ../sass/style.sass */
+  .slider-fittings {
+    width: 80%; }
+    /* line 1355, ../sass/style.sass */
+    .slider-fittings img {
+      width: 27%; } }
+@media screen and (min-width: 425px) and (max-width: 450px) {
+  /* line 1359, ../sass/style.sass */
+  .change-interior-door {
+    padding-top: 100px; }
+
+  /* line 1361, ../sass/style.sass */
+  #slider-interiors1, #slider-interiors2, #slider-interiors3 {
+    top: 300px;
+    padding-bottom: 40px; }
+
+  /* line 1364, ../sass/style.sass */
+  .contacts-text-row {
+    width: 320px; }
+    /* line 1366, ../sass/style.sass */
+    .contacts-text-row p {
+      width: 280px; }
+
+  /* line 1369, ../sass/style.sass */
+  .kak-eto-delat h1 {
+    font-size: 45px;
+    padding-top: 40px; }
+  /* line 1372, ../sass/style.sass */
+  .kak-eto-delat h3 {
+    font-size: 36px; }
+  /* line 1375, ../sass/style.sass */
+  .kak-eto-delat h4 {
+    padding-top: 20px;
+    font-size: 28px; }
+
+  /* line 1378, ../sass/style.sass */
+  .metal-headline h2 {
+    margin-bottom: 60px; }
+
+  /* line 1380, ../sass/style.sass */
+  .buttons-metal {
+    margin-top: 70px; }
+
+  /* line 1382, ../sass/style.sass */
+  #slick-metal-doors-slider, #popular-doors-choicess {
+    top: 283px;
+    height: 450px; } }
+@media screen and (width: 425px) {
+  /* line 1387, ../sass/style.sass */
+  p {
+    font-size: 18px; }
+
+  /* line 1389, ../sass/style.sass */
+  .preview-slider {
+    height: 300px; }
+    /* line 1391, ../sass/style.sass */
+    .preview-slider img {
+      height: 300px; }
+
+  /* line 1394, ../sass/style.sass */
+  .kak-eto-delat h1 {
+    font-size: 43px;
+    padding-top: 20px; }
+  /* line 1397, ../sass/style.sass */
+  .kak-eto-delat h3 {
+    font-size: 26px; }
+  /* line 1400, ../sass/style.sass */
+  .kak-eto-delat h4 {
+    padding-top: 5px;
+    font-size: 18px; }
+  /* line 1403, ../sass/style.sass */
+  .kak-eto-delat .button {
+    margin-top: 15px;
+    height: 37px;
+    width: 190px;
+    font-size: 14px; }
+
+  /* line 1408, ../sass/style.sass */
+  iframe {
+    width: 300px;
+    height: 300px; }
+
+  /* line 1411, ../sass/style.sass */
+  .cotacts-and-map-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+
+  /* line 1413, ../sass/style.sass */
+  .about-company, .gallery-main, .slider-center, .interior-door, .pop-model-overlay, .metal-door, .fittings-main, .our-advantages, .measurements-headline, .contacts, .footer-end {
+    width: 96%; }
+
+  /* line 1415, ../sass/style.sass */
+  .slider-center {
+    padding-top: 100px;
+    width: 95%; }
+    /* line 1418, ../sass/style.sass */
+    .slider-center img {
+      height: 400px;
+      width: 400px; }
+
+  /* line 1421, ../sass/style.sass */
+  .gallery-overlay {
+    padding-bottom: 40px;
+    height: 100%; }
+
+  /* line 1424, ../sass/style.sass */
+  .gallery-headline h3 {
+    font-size: 36px; }
+
+  /* line 1426, ../sass/style.sass */
+  .button-view-all {
+    font-size: 18px;
+    width: 40%; } }
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  /* line 1431, ../sass/style.sass */
+  .map {
+    width: 300px;
+    margin: auto; }
+
+  /* line 1434, ../sass/style.sass */
+  p {
+    font-size: 18px; }
+
+  /* line 1436, ../sass/style.sass */
+  .preview-slider {
+    height: 380px; }
+    /* line 1438, ../sass/style.sass */
+    .preview-slider img {
+      height: 380px; }
+
+  /* line 1441, ../sass/style.sass */
+  .kak-eto-delat h1 {
+    font-size: 43px;
+    padding-top: 20px; }
+  /* line 1444, ../sass/style.sass */
+  .kak-eto-delat h3 {
+    font-size: 26px; }
+  /* line 1447, ../sass/style.sass */
+  .kak-eto-delat h4 {
+    padding-top: 5px;
+    font-size: 18px; }
+  /* line 1450, ../sass/style.sass */
+  .kak-eto-delat .button {
+    margin-top: 15px;
+    height: 37px;
+    width: 190px;
+    font-size: 14px; }
+
+  /* line 1455, ../sass/style.sass */
+  .comp-headline {
+    padding: 0; }
+
+  /* line 1457, ../sass/style.sass */
+  .about-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    /* line 1459, ../sass/style.sass */
+    .about-company .comp-overlay, .about-company .store-overlay {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      /* line 1462, ../sass/style.sass */
+      .about-company .comp-overlay .store, .about-company .comp-overlay .comp-headline, .about-company .store-overlay .store, .about-company .store-overlay .comp-headline {
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%; }
+
+  /* line 1464, ../sass/style.sass */
+  .slider-center {
+    padding-top: 140px;
+    width: 95%; }
+
+  /* line 1467, ../sass/style.sass */
+  .metal-overlay-end {
+    padding-top: 350px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 1470, ../sass/style.sass */
+    .metal-overlay-end .find-door {
+      max-height: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+      /* line 1473, ../sass/style.sass */
+      .metal-overlay-end .find-door p {
+        padding: 25px; }
+      /* line 1475, ../sass/style.sass */
+      .metal-overlay-end .find-door h3 {
+        padding: 0;
+        font-size: 28px;
+        text-align: center; }
+
+  /* line 1479, ../sass/style.sass */
+  .metal-doors-certificate {
+    padding-top: 20px; }
+    /* line 1481, ../sass/style.sass */
+    .metal-doors-certificate img {
+      width: 90px;
+      height: 100%; }
+
+  /* line 1484, ../sass/style.sass */
+  .slider-fittings {
+    padding-top: 80px;
+    width: 90%; }
+
+  /* line 1487, ../sass/style.sass */
+  .advantges-choice-overlay {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  /* line 1489, ../sass/style.sass */
+  .advantges-choice {
+    width: 40%;
+    margin: 30px 0; }
+
+  /* line 1492, ../sass/style.sass */
+  .advantges-choice-show-text {
+    padding-top: 50px; }
+
+  /* line 1494, ../sass/style.sass */
+  iframe {
+    width: 300px;
+    height: 300px; }
+
+  /* line 1497, ../sass/style.sass */
+  .cotacts-and-map-overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+
+  /* line 1499, ../sass/style.sass */
+  .contacts-texts {
+    padding-left: 0; }
+
+  /* line 1501, ../sass/style.sass */
+  .contacts-text-row {
+    width: 300px; }
+    /* line 1503, ../sass/style.sass */
+    .contacts-text-row p {
+      width: 240px; }
+
+  /* line 1505, ../sass/style.sass */
+  .footer-end {
+    height: 50px; }
+    /* line 1507, ../sass/style.sass */
+    .footer-end p {
+      font-size: 12px;
+      text-align: center; }
+    /* line 1510, ../sass/style.sass */
+    .footer-end a {
+      width: 100px; }
+    /* line 1512, ../sass/style.sass */
+    .footer-end img {
+      width: 90px; }
+
+  /* line 1514, ../sass/style.sass */
+  #bottm-logo {
+    width: 90px; }
+
+  /* line 1516, ../sass/style.sass */
+  .menu-overl {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+  /* line 1519, ../sass/style.sass */
+  #karta-site {
+    display: none; }
+
+  /* line 1521, ../sass/style.sass */
+  .change-interior-door {
+    padding-top: 145px; }
+    /* line 1523, ../sass/style.sass */
+    .change-interior-door p {
+      font-size: 17px;
+      min-width: 23%;
+      font-weight: 500;
+      padding-left: 4px;
+      margin-left: 16px;
+      adding-right: 2px;
+      margin-right: 5px; }
+
+  /* line 1531, ../sass/style.sass */
+  #slider-interiors1, #slider-interiors2, #slider-interiors3 {
+    top: 350px;
+    padding-bottom: 40px; }
+
+  /* line 1535, ../sass/style.sass */
+  .pop-headline p, .metal-headline p {
+    padding-top: 60px; }
+
+  /* line 1537, ../sass/style.sass */
+  .popular-doors-choice {
+    padding-top: 130px; }
+
+  /* line 1539, ../sass/style.sass */
+  .buttons-metal {
+    padding-top: 60px; }
+
+  /* line 1541, ../sass/style.sass */
+  .partners {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    /* line 1543, ../sass/style.sass */
+    .partners img {
+      width: 20%; }
+
+  /* line 1545, ../sass/style.sass */
+  .our-advantages {
+    height: 800px; }
+
+  /* line 1547, ../sass/style.sass */
+  .our-advantages-headline {
+    max-height: 130px; }
+
+  /* line 1549, ../sass/style.sass */
+  .our-advantages-headline h2 {
+    height: 130px; }
+
+  /* line 1551, ../sass/style.sass */
+  .measurements-overlay {
+    min-height: 1000px; }
+
+  /* line 1554, ../sass/style.sass */
+  .contacts-text-row p {
+    font-size: 15px; }
+
+  /* line 1556, ../sass/style.sass */
+  .contacts {
+    height: 100%; }
+
+  /* line 1558, ../sass/style.sass */
+  #slick-metal-doors-slider, #popular-doors-choicess {
+    top: 283px; } }
