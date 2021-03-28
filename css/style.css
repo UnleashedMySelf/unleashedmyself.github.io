@@ -274,6 +274,7 @@ body {
     padding-right: 40px;
   }
   .container__item-title {
+    top: 298px;
     left: -18px;
   }
   .footer {
