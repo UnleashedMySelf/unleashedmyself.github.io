@@ -163,7 +163,7 @@ body {
 }
 
 .container__item-3 {
-  background-image: url("../images/site3.png");
+  background-image: url("../images/site5.png");
   background-size: cover;
   -webkit-animation: animateProjects 10s infinite;
           animation: animateProjects 10s infinite;
@@ -171,6 +171,13 @@ body {
 
 .container__item-4 {
   background-image: url("../images/site4.png");
+  background-size: cover;
+  -webkit-animation: animateProjects 10s infinite;
+          animation: animateProjects 10s infinite;
+}
+
+.container__item-5 {
+  background-image: url("../images/site3.png");
   background-size: cover;
   -webkit-animation: animateProjects 10s infinite;
           animation: animateProjects 10s infinite;
