@@ -557,6 +557,7 @@ input, button {
   border-radius: 8px;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .promo-banner-right {
