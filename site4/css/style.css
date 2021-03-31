@@ -1256,6 +1256,9 @@ input, button {
   .header__search-input {
     width: 170px;
   }
+  .footer ul li::before {
+    content: none;
+  }
 }
 
 @media screen and (max-width: 362px) {
@@ -1270,9 +1273,6 @@ input, button {
   }
   .footer-nav ul li {
     padding: 5px 0;
-  }
-  .footer span {
-    display: none;
   }
   .search-block__left p {
     padding-bottom: 16px;
