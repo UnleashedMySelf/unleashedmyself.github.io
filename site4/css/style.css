@@ -560,6 +560,10 @@ input, button {
   cursor: pointer;
 }
 
+.promo-banner__button::hover {
+  background: #0c6f58
+}
+
 .promo-banner-right {
   position: relative;
   z-index: 0;
