@@ -560,7 +560,7 @@ input, button {
   cursor: pointer;
 }
 
-.promo-banner__button::hover {
+.promo-banner__button:hover {
   background: #0c6f58
 }
 
