@@ -1,0 +1,312 @@
+/* Imports */
+@import _fonts
+@import _colors
+/* Mini-styles */
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Open Sans', sans-serif
+    color: $black
+    outline: none
+h2, h3
+    font-family: Times New Roman, sans-serif
+h2
+    font-size: 35px
+h3
+    font-size: 22px
+    font-weight: 700
+    line-height: 17px
+p
+    font-size: 15px
+    font-weight: 400
+
+/* Header */
+
+.header
+    height: 166px
+
+/* Block Speciality */
+
+.main-wrap
+    display: flex
+    flex-direction: column
+.speciality
+    display: flex
+    background-color: $bg-gray
+.speciality__img img
+    display: flex
+    max-width: 100%
+    height: auto
+.speciality__about
+    display: flex
+    flex-direction: column
+    align-self: center
+    padding-left: 68px
+    padding-right: 20px
+    p
+        color: $gray
+        font-size: 14px
+        padding-bottom: 47px
+        &:nth-last-child(1)
+            padding-bottom: 0
+    h2
+        padding-bottom: 37px
+    h3
+        font-family: 'Open Sans', sans-serif
+        padding-bottom: 20px
+
+/* Block Product Cart */
+
+.product-cart
+    display: flex
+    flex-direction: column
+    max-width: 1170px
+    align-self: center
+    padding-top: 100px
+.product-cart-overlay
+    display: flex
+    justify-content: space-around
+    padding: 25px 0
+.product-cart__items
+    display: flex
+    flex-direction: column
+    width: 800px
+    min-height: 200px
+.product-cart__items-titles
+    padding-bottom: 14px
+    border-bottom: 1px solid #e4e4e4
+    ul
+        display: flex
+        li
+            list-style: none
+            font-family: Times New Roman, sans-serif
+            font-size: 22px
+            font-weight: 700
+            &:nth-child(2)
+                padding-left: 325px
+            &:nth-child(3)
+                padding-left: 90px
+            &:nth-child(4)
+                padding-left: 125px            
+.product-cart__item
+    display: flex
+    position: relative
+    align-items: center
+    padding: 20px 0
+    border-bottom: 1px solid #e4e4e4
+    left: 0
+    h4
+        font-size: 15px
+        font-weight: 700
+    p
+        font-weight: 700
+.product-cart__item-price, .product-cart__item-total-price
+    width: 70px
+    margin-left: 30px
+.product-cart__item-input 
+    width: 60px
+    height: 39px
+    padding-left: 10px
+    margin: 0 70px
+    font-size: 15px
+    font-weight: bold
+    text-align: center
+.product-cart__item-img
+    width: 115px 
+    height: 115px
+.product-cart__item-title
+    padding-left: 29px
+    width: 226px
+    a
+        text-decoration: none
+        &:hover
+            color: #fea100
+.delete-item
+    background-color: $bg-btn
+    width: 32px
+    height: 32px
+    position: absolute
+    top: 5px
+    left: 95px
+    border-radius: 20px
+    cursor: pointer
+    transform: rotate(-5deg)
+    transition: .8s ease
+    &:hover
+        transform: rotate(-95deg)
+    &::after
+        content: ''
+        position: absolute
+        background-color: #fff
+        height: 14px
+        width: 2px
+        left: 16px
+        top: 9px
+        transform: rotate(45deg)
+    &::before
+        content: ''
+        position: absolute
+        background-color: #fff
+        height: 14px
+        width: 2px
+        left: 16px
+        top: 9px
+        transform: rotate(-45deg)
+.product-cart__summary-overlay
+    display: flex
+    flex-direction: column
+    margin-left: 30px
+    width: 270px
+    height: 383px
+    background-color: #fe4c8d 
+.product-cart__summary
+    display: flex
+    flex-direction: column
+    position: relative
+    overflow: hidden
+    margin: 10px auto
+    padding: 33px 29px 
+    & > *
+        z-index: 5
+    &::before
+        content: ''
+        position: absolute
+        border: 2px dashed $wpink2
+        top: -1px
+        bottom: -1px
+        left: -1px
+        right: -1px
+    hr
+        border-top: 2px dashed #ffa6c6
+        border-bottom: 0
+        border-left: 0
+        border-right: 0
+        position: absolute
+        top: 163px
+        width: 100%
+        left: 0
+    h3
+        color: #fff
+        padding-bottom: 9px
+    li, span
+        color: $wpink
+        width: 100%
+    ul
+        padding-bottom: 9px
+        li
+            list-style: none
+            font-size: 15px
+            line-height: 28px
+            span
+                position: absolute
+                left: 174px
+    h4
+        color: #fff
+        font-size: 15px
+        font-weight: 700
+        padding-top: 18px
+        position: relative
+        line-height: 28px
+        & > span
+            color: #fff
+            position: absolute
+            left: 145px
+            bottom: 0
+.checkout_btn
+    width: 197px
+    height: 51px
+    background-color: $yellow
+    border: none
+    cursor: pointer
+    color: #fff
+    font-size: 14px
+    font-weight: 700
+    border-radius: 6px
+    margin-top: 35px
+    margin-bottom: 46px
+    &:hover
+        background-color: #ffaf24
+.empty
+    font-size: 24px
+    margin: auto
+    color: $gray
+
+/* Footer */
+
+.footer
+    height: 100px
+
+
+/* Adaptive */
+
+@media screen and ( max-width: 1170px )
+    .speciality, .product-cart-overlay
+        flex-direction: column
+    .speciality__img img  
+        width: 100%
+    .speciality__about
+        padding: 0 20px
+        h2
+            text-align: center
+            padding-top: 25px
+        p:nth-last-child(1)
+            padding-bottom: 47px
+    .product-cart__items
+        width: auto
+    .product-cart__summary-overlay
+        margin: 35px auto 0
+    
+@media screen and ( max-width: 768px )
+    .product-cart__items-titles ul li:nth-child(2) 
+        padding-left: 285px
+    .product-cart__items-titles ul li:nth-child(3) 
+        padding-left: 25px
+    .product-cart__items-titles ul li:nth-child(4) 
+        padding-left: 45px
+    .product-cart__item-price, .product-cart__item-total-price
+        margin-left: 40px
+    .product-cart__item-input
+        width: 45px
+        padding: 0
+        margin: 0
+    .product-cart__item-title
+        width: 175px
+
+@media screen and ( max-width:  600px)
+    .product-cart__items-titles ul li:nth-child(2) 
+        padding-left: 100px
+    .product-cart__items-titles ul li:nth-child(3) 
+        padding-left: 20px
+    .product-cart__items-titles ul li:nth-child(4) 
+        padding-left: 25px
+    .product-cart__item-price, .product-cart__item-total-price
+        margin-left: 30px
+    .product-cart__item
+        min-height: 200px
+        max-width: 100%
+    .delete-item
+        top: 25px
+    .product-cart__item h4
+        position: absolute
+        top: 167px
+        left: -30px
+
+@media screen and ( max-width: 365px )
+    .product-cart
+        padding-top: 50px
+    .product-cart__items-titles ul li:nth-child(2) 
+        padding-left: 73px
+    .product-cart__items-titles ul li:nth-child(3), .product-cart__items-titles ul li:nth-child(4) 
+        padding-left: 15px
+    .product-cart__item-img
+        width: 90px
+        height: auto
+    .product-cart__item-price, .product-cart__item-total-price
+        width: 100%
+    .delete-item
+        top: 35px
+        left: 72px
+    .product-cart__item-title
+        width: auto
+        max-width: 230px
