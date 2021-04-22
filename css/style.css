@@ -199,6 +199,12 @@ body {
   -webkit-animation: animateProjects 10s infinite;
           animation: animateProjects 10s infinite;
 }
+.container__item-6 {
+  background-image: url("../images/sitegolden.png");
+  background-size: cover;
+  -webkit-animation: animateProjects 25s infinite;
+          animation: animateProjects 25s infinite;
+}
 
 @-webkit-keyframes arrowAni {
   0% {
