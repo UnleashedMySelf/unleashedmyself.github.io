@@ -5,7 +5,6 @@ let countLicenses = document.getElementById('licenseCount');
 let totalPrice = document.querySelector('.total-cost');
 let total = 0;
 
-console.log(licenseItemList);
 licenseItemList.forEach (radCheck => {
     radCheck.addEventListener('click', (e) => {
         allItems.forEach (item => {
