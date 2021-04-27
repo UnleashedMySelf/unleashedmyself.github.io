@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyrokov Roman test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+    </header>
+    <main class="main">
+        <form action="submit" class="form">
+            <div class="form__inner">
+                <div class="form__item active">
+                    <input type="radio" name="license" id="license-1" value="13" checked>
+                    <span class="input-cm"></span>
+                    <label for="license-1">license plan <span>#1</span></label>
+                    <label for="license-1" class="right"    >$13 per license</label>
+                </div>
+                <div class="form__item">
+                    <input type="radio" name="license" id="license-2" value="22">
+                    <span class="input-cm"></span>
+                    <label for="license-2">license plan <span>#2</span></label>
+                    <label for="license-2" class="right">$22 per license</label>
+                </div>
+                <div class="form__item">
+                    <input type="radio" name="license" id="license-3" value="34">
+                    <span class="input-cm"></span>
+                    <label for="license-3">license plan <span>#3</span></label>
+                    <label for="license-3" class="right">$34 per license</label>
+                </div>
+                <div class="form__count">
+                    <p>Number of licenses:</p>
+                    <input type="number" id="licenseCount" min="1" max="100" value="10">
+                </div>
+                <div class="form__total">
+                    <label>total:</label>
+                    <span class="total-cost">$ 130</span><sup>us</sup>
+                </div>
+                <input type="submit" class="btn-buynow" value="Buy Now">
+                <p>Selected plan: <span class="selected-plan">#1</span></p>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
