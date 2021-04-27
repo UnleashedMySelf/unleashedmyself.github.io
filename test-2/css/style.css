@@ -152,7 +152,7 @@ label, input {
 }
 
 .active {
-  border-top: 1px solid #c4dde7;
+  border: 1px solid #c4dde7;
   background: #ebf4f7;
 }
 
