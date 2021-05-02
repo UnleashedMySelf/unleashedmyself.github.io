@@ -598,6 +598,8 @@ h3 {
   width: 43px;
   height: 43px;
   border-radius: 50%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   background: transparent;
   border: 1px solid #8A5137;
 }
