@@ -205,6 +205,12 @@ body {
   -webkit-animation: animateProjects 25s infinite;
           animation: animateProjects 25s infinite;
 }
+.container__item-7 {
+  background-image: url("../images/site-coffee.png");
+  background-size: cover;
+  -webkit-animation: animateProjects 25s infinite;
+          animation: animateProjects 25s infinite;
+}
 
 @-webkit-keyframes arrowAni {
   0% {
