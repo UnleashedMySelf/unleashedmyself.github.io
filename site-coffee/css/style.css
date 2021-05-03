@@ -498,6 +498,15 @@ h3 {
   top: -40px;
 }
 
+.insta-slider__img {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.insta-slider__img:hover {
+  opacity: .85;
+}
+
 .main__testimonials {
   position: relative;
   min-height: 750px;
@@ -1423,9 +1432,6 @@ h3 {
     height: 870px;
     padding-bottom: 280px;
   }
-  .main__little-about-image img {
-    width: 300px;
-  }
   .main__how-to-options {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1436,6 +1442,7 @@ h3 {
             align-items: center;
   }
   .main__how-to-option {
+    width: 90%;
     padding-bottom: 84px;
   }
   .main__how-to-option:last-child {
@@ -1514,11 +1521,14 @@ h3 {
     padding-top: 57px;
   }
   .main__product-description p {
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
   .slick-slider__item p {
     width: 335px;
+  }
+  .main__little-about-image img {
+    width: 300px;
   }
   .main__blog-top {
     height: 450px;
