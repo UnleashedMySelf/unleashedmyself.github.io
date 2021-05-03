@@ -1513,6 +1513,10 @@ h3 {
     background-size: 500px 500px;
     padding-top: 57px;
   }
+  .main__product-description p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .slick-slider__item p {
     width: 335px;
   }
