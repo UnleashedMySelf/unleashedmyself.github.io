@@ -1423,6 +1423,9 @@ h3 {
     height: 870px;
     padding-bottom: 280px;
   }
+  .main__little-about-image img {
+    width: 300px;
+  }
   .main__how-to-options {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
