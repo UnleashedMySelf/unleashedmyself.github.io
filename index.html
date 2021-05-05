@@ -45,7 +45,7 @@
                 <li>BEM</li>
             </ul>
         </div>
-        <div class="container__item container__item-6">
+        <div class="container__item container__item-6 lazy">
             <a href="https://goldensoft.tech/" target="_blank" class="container__item-title">Project G</a>
             <ul>
                 <li>WordPress</li>
@@ -55,7 +55,7 @@
                 <li>JS+JQuery</li>
             </ul>
         </div>
-        <div class="container__item container__item-2">
+        <div class="container__item container__item-2 lazy">
             <a href="https://unleashedmyself-music-testsite.000webhostapp.com/" target="_blank" class="container__item-title">Project 2</a>
             <ul>
                 <li>PHP</li>
@@ -65,7 +65,7 @@
                 <li>JS+JQuery</li>
             </ul>
         </div>
-        <div class="container__item container__item-3">
+        <div class="container__item container__item-3 lazy">
             <a href="/site2/index.html" target="_blank" class="container__item-title">Project 3</a>
             <ul>
                 <li>BEM</li>
@@ -74,7 +74,7 @@
                 <li>JS</li>
             </ul>
         </div>
-        <div class="container__item container__item-4">
+        <div class="container__item container__item-4 lazy">
             <a href="/site4/index.html" target="_blank" class="container__item-title">Project 4</a>
             <ul>
                 <li>BEM</li>
@@ -83,7 +83,7 @@
                 <li>JS</li>
             </ul>
         </div>
-        <div class="container__item container__item-5">
+        <div class="container__item container__item-5 lazy">
             <a href="/site5/index.html" target="_blank" class="container__item-title">Project 5</a>
             <ul>
                 <li>SASS</li>
@@ -110,6 +110,10 @@
         isAnimated: true,
         springEffect: 0.8
         })
+        
+        $(function() {
+        $('.lazy').lazy();
+    });
     </script>
 </body>
 </html>
