@@ -165,7 +165,7 @@ body {
 }
 
 .container__item-1 {
-  background-image: url("../images/site1.png");
+  background-image: url("blob:https://imgur.com/b4064111-cf4d-4784-accd-d03f8dd34807");
   background-size: cover;
   -webkit-animation: animateProjects 25s infinite;
           animation: animateProjects 25s infinite;
