@@ -150,10 +150,9 @@ body {
 }
 
 .container__item-header a {
-  padding-top: 5px;
+  margin: 5px 0 0 20px;
   -webkit-transition: .7s;
   transition: .7s;
-  padding-left: 20px;
 }
 
 .container__item-header a:hover {
