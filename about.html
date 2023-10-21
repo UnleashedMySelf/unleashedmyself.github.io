@@ -58,12 +58,12 @@
   <body
     class="font-main custom-cursor-area flex min-h-screen flex-col bg-neutral-800 text-white opacity-0 duration-300 ease-in-out"
     x-intersect="$el.classList.add('opacity-100')"
-    x-data="projects"
+    x-data
   >
     <header class="flex py-10">
       <ul class="container flex justify-between">
         <li>
-          <a class="link text-base" href="/about.html">About me</a>
+          <a class="link text-base" href="/">Back to projects</a>
         </li>
         <li>
           <a class="link text-base" href="/cv.html">PDF CV</a>
@@ -86,69 +86,47 @@
       </div>
     </div>
 
-    <main
-      role="main"
-      class="relative flex flex-1 flex-col"
-      @click.self="close()"
-    >
-      <div class="container mt-auto">
-        <h2 class="mb-5 text-xl md:text-3xl">Some Shopify Stores:</h2>
-        <ul>
-          <template
-            x-for="(project, index) in projectsList"
-            :key="handleize(project.title)"
-          >
-            <li
-              class="grid grid-cols-[minmax(0,30px)_minmax(0,max-content)] gap-5 pb-1 text-base"
+    <main role="main" class="container relative flex flex-1 flex-col">
+      <div class="m-auto mt-10">
+        <h1 class="mb-5 text-center text-3xl">it's me</h1>
+        <div class="relative mx-auto mb-10 max-w-sm">
+          <img
+            class="relative z-[1] h-full w-full object-center"
+            src="https://i.imgur.com/FhH9oYo.jpg"
+            alt="it's me"
+          />
+          <span class="absolute left-2 top-2 h-full w-full bg-gray-700"></span>
+        </div>
+        <div class="flex flex-col space-y-4 text-center md:space-y-2">
+          <h3>Roman Shyrokov</h3>
+          <p>26 yo</p>
+          <p>
+            Shopify Plus developer with over 3 years of commercial experience
+            and 2 years of freelance in web development.
+          </p>
+          <p>
+            Graduated from the Donetsk National University (DonNU), Vinnytsia.
+            <br />Degree of education: Master of Computer Science.
+          </p>
+          <p>talk less do more</p>
+          <div class="flex flex-col items-center space-y-2">
+            <a
+              class="link active"
+              target="_blank"
+              href="https://www.linkedin.com/in/roman-shyrokov/"
             >
-              <span class="text-left" x-text="index"></span>
-              <button
-                class="link text-left"
-                x-text="project.title"
-                @click.prevent="open(handleize(project.title))"
-              ></button>
-            </li>
-          </template>
-        </ul>
-      </div>
-
-      <template x-for="project in projectsList" :key="handleize(project.title)">
-        <article
-          class="article-project scrollbar-hide fixed bottom-0 right-0 h-full w-full overflow-y-auto bg-white p-8 text-black opacity-0 duration-500 ease-in-out md:max-h-[calc(100%-150px)] md:max-w-[70%] md:p-10 lg:p-16"
-          x-cloak
-          :class="{ 'opacity-100 active' : handleize(activeProject.title) === handleize(project.title) && showPopup }"
-        >
-          <h1 class="text-3xl font-bold" x-text="project.title"></h1>
-          <div
-            class="my-10 grid grid-cols-1 gap-5 md:mb-20 md:grid-cols-2 lg:gap-x-16"
-          >
-            <span>---------------------</span>
-            <div class="">
-              <button
-                class="text-gray-500 duration-300 ease-in-out hover:text-gray-900"
-                @click.prevent="close()"
-              >
-                Close
-              </button>
-            </div>
-
-            <div class="">
-              <p class="mb-5 text-base" x-text="project.stack"></p>
-              <a
-                :href="project.url"
-                target="_blank"
-                class="link active"
-                aria-label="Redirect to project store"
-              >
-                <span>Visit store</span>
-              </a>
-            </div>
-
-            <p x-text="project.description"></p>
+              linkedin
+            </a>
+            <a
+              class="link active"
+              target="_blank"
+              href="https://t.me/unleashedmyself"
+            >
+              Telegram
+            </a>
           </div>
-          <img :src="project.img" alt="Project image" />
-        </article>
-      </template>
+        </div>
+      </div>
     </main>
 
     <footer class="container mb-2 mt-20 flex justify-end text-base text-white">

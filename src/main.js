@@ -26,5 +26,6 @@ Alpine.store("stop-scroll", stopScroll);
 
 //components
 Alpine.data("marquee", components.marquee);
+Alpine.data("projects", components.projects);
 
 Alpine.start();
