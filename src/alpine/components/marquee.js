@@ -19,6 +19,7 @@ export const marquee = () => ({
     this.marqueeEls = this.$el.querySelectorAll("[data-marquee-el]");
     this.marqueeSpeed = this.$el.getAttribute("data-marquee-speed");
     const centerOnFit = this.$el.hasAttribute("data-center-fit");
+    const floatMarquee = this.$el.hasAttribute("data-float");
     this.marqueeWidth = 0.0;
     this.marqueeHeight = 0.0;
 
@@ -41,7 +42,7 @@ export const marquee = () => ({
       );
 
       this.marqueeWidth += elWidth;
-      if (elHeight > this.marqueeHeight) {
+      if (elHeight > this.marqueeHeight && !floatMarquee) {
         this.marqueeHeight = elHeight;
       }
     });
