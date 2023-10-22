@@ -110,21 +110,6 @@
     <main role="main" class="relative flex flex-1 flex-col overflow-hidden">
       <h1 class="sr-only">Roman Shyrokov Portfolio</h1>
 
-      <div data-marquee-inner>
-        <div
-          class="marquee fixed top-1/4 inline-flex w-max items-center md:top-1/3"
-          x-data="marquee"
-          @resize.window="marqueeLogic()"
-        >
-          <span
-            class="flex w-full shrink-0 whitespace-nowrap px-3 text-gray-700"
-            data-marquee-el
-          >
-            talk less do more
-          </span>
-        </div>
-      </div>
-
       <div
         x-cloak
         class="flex flex-1 flex-col duration-300 ease-in-out"
@@ -236,7 +221,7 @@
                 target="_blank"
                 href="https://t.me/unleashedmyself"
               >
-                Telegram
+                telegram
               </a>
             </div>
           </div>
@@ -245,7 +230,7 @@
 
       <div
         x-cloak
-        class="flex flex-1 flex-col duration-300 ease-in-out"
+        class="mt-10 flex flex-1 flex-col duration-300 ease-in-out"
         :class="activePage === 'cv' ? 'opacity-100 visible' : 'opacity-0 invisible absolute inset-0'"
       >
         <h2 class="mb-5 text-center text-3xl">CV</h2>
@@ -259,6 +244,22 @@
             <a class="link active" href="Shyrokov_CV.pdf">Download instead.</a>
           </p>
         </object>
+      </div>
+
+      <div class="" data-marquee-inner>
+        <div
+          class="marquee fixed top-1/4 z-[-1] inline-flex w-max items-center md:top-1/3"
+          x-data="marquee"
+          data-float
+          @resize.window="marqueeLogic()"
+        >
+          <span
+            class="flex w-full shrink-0 whitespace-nowrap px-3 text-gray-700"
+            data-marquee-el
+          >
+            talk less do more
+          </span>
+        </div>
       </div>
     </main>
 
