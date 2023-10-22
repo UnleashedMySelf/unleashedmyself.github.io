@@ -1,6 +1,7 @@
 import { projectsList, handleize } from "@/helpers";
 export const projects = () => ({
   projectsList: projectsList,
+  activePage: 'projects',
   activeProject: null,
   showPopup: false,
   init() {
