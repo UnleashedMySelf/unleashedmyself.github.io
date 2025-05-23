@@ -99,11 +99,6 @@
             </button>
           </li>
         </template>
-        <li>
-          <button @click.prevent="activePage = 'cv'" class="link text-base">
-            PDF CV
-          </button>
-        </li>
       </ul>
     </header>
 
@@ -200,8 +195,7 @@
             <h3>Roman Shyrokov</h3>
             <p>26 yo</p>
             <p>
-              Shopify Plus developer with over 3 years of commercial experience
-              and 2 years of freelance in web development.
+              Shopify Plus developer with over 5 years of Shopify commercial experience.
             </p>
             <p>
               Graduated from the Donetsk National University (DonNU), Vinnytsia.
@@ -226,24 +220,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div
-        x-cloak
-        class="mt-10 flex flex-1 flex-col duration-300 ease-in-out"
-        :class="activePage === 'cv' ? 'opacity-100 visible' : 'opacity-0 invisible absolute inset-0'"
-      >
-        <h2 class="mb-5 text-center text-3xl">CV</h2>
-        <object
-          data="Shyrokov_CV.pdf"
-          type="application/pdf"
-          class="container relative h-full w-full flex-1"
-        >
-          <p class="mx-auto mt-10 text-center">
-            Unable to display PDF file.
-            <a class="link active" href="Shyrokov_CV.pdf">Download instead.</a>
-          </p>
-        </object>
       </div>
 
       <div class="" data-marquee-inner>
